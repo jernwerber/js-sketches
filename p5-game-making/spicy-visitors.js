@@ -158,7 +158,6 @@ function s (p) {
         p.textSize(30);
         p.textAlign('center');
         p.text('GAME OVER', p.width/2, p.height/2);
-        p.saveCanvas();
         p.pop();
       }
   
