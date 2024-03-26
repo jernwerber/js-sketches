@@ -94,6 +94,10 @@ function s (p) {
         }
       }
     }
+
+    p.keyPressed = function() {
+        return false;
+    }
   
     p.setup = function() {
       let cnv = p.createCanvas(400, 500);
