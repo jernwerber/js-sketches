@@ -29,16 +29,16 @@ function s (p) {
         }
   `);
       let d = p.createDiv(`
-      <p>Controls:</p>
         <ul id="instructions-list" style="list-style:none;">
+          <li><strong>Controls:</strong></li>
           <li><kbd>&larr; LEFT ARROW</kbd>: Move left</li>
           <li><kbd>&rarr; RIGHT ARROW</kbd>: Move right</li>
           <li><kbd>SHIFT (HOLD)</kbd>: Slow move</li>
           <li><kbd>&uarr; UP ARROW</kbd>: Shoot</li>
         </ul>`);
       
-      d.style('display:grid');
-      d.style('grid-template-columns:4rem auto');
+      // d.style('display:grid');
+      // d.style('grid-template-columns:4rem auto');
       d.style('padding:10px');
       
     }
@@ -158,6 +158,7 @@ function s (p) {
         p.textSize(30);
         p.textAlign('center');
         p.text('GAME OVER', p.width/2, p.height/2);
+        p.saveCanvas();
         p.pop();
       }
   
